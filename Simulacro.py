@@ -99,14 +99,14 @@ def buscar_producto(a):
 #• Utilizar un algoritmo de ordenamiento para ordenar los productos en función
 #de su precio de manera ascendente y luego mostrar por pantalla los productos
 #ordenados. 
-def ordenar_inventario(arreglo):
+def ordenar_inventario(a):
     if inventario != []:
-        n = len(arreglo)
+        n = len(a)
 
         for i in range(n-1):  
             for j in range(n-1-i): 
-                if arreglo[j][1] > arreglo[j+1][1]:
-                    arreglo[j], arreglo[j+1] = arreglo[j+1], arreglo[j]
+                if a[j][1] > a[j+1][1]:
+                    a[j], a[j+1] = a[j+1], a[j]
     else:
         print("Error, prinero debe ingresar productor al inventario.")
 
